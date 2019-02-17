@@ -1,5 +1,6 @@
 package com.example.csc518;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -27,6 +28,12 @@ public class Page2Activity extends AppCompatActivity
         int age = Integer.parseInt(this.ageET.getText().toString());
         Student s = new Student(fname, lname, age);
         s.display();
+
+        Core.currStudent = s;
+
+        //Intent i = new Intent(this, MainActivity.class);
+        //Intent i = new Intent(this, MainActivity.class);
+        //this.startActivity(i);
     }
 
 
